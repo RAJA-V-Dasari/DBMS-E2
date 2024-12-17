@@ -1,0 +1,22 @@
+use student_db
+
+db.createCollection("Student");
+
+db.Student.insert({RollNo:8,Age:21,Cont:9900990099,email:"rajavd@gmail.com"});
+db.Student.insert({RollNo:9,Age:22,Cont:9998734989,email:"vishwanathd@gmail.com"});
+db.Student.insert({RollNo:10,Age:20,Cont:987894989,email:"vidit@gmail.com"});
+db.Student.insert({RollNo:12,Age:20,Cont:678894989,email:"girish@gmail.com"});
+db.Student.insert({RollNo:13,Age:20,Cont:678904999,email:"ramesh@gmail.com"});
+
+db.Student.find()
+
+ db.Student.insert({RollNo:11,Age:20,Name:"ABC",Cont:678904999,email:"ramesh@gmail.com"});
+
+ db.Student.find()
+
+  db.Student.update({RollNo:10},{$set:{email:"vidit23@gmail.com"}})
+db.Student.find()
+
+db.Student.update({RollNo:11,Name:"ABC"},{$set:{Name:"FEM"}})
+db.Student.find()
+  
