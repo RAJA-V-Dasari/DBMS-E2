@@ -20,3 +20,9 @@ db.Student.find()
 db.Student.update({RollNo:11,Name:"ABC"},{$set:{Name:"FEM"}})
 db.Student.find()
   
+mongoexport --uri="mongodb+srv://rajavishwanathcs23:Raja1234@dbms-cluster.q3hu5.mongodb.net/student_db" --collection=Student --type=json --out="C:\\Users\\student\\Desktop\\output.json"
+
+db.Student.drop()
+db.Student.find()
+
+ mongoimport --uri="mongodb+srv://rajavishwanathcs23:Raja1234@dbms-cluster.q3hu5.mongodb.net/student_db" \--collection=Food \--type=csv \--fields=Food,Food Type,Color \--file=C:\Users\student\Desktop\DBMS_LAB8.csv
